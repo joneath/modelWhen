@@ -2,7 +2,7 @@
 modelWhen adds promise based attribute changes to Backbone.Model. It will call any added callbacks through the done or then methods when the watched attribute is truthy or equal to a specified value.
 
 ## Usage
-		myModel.when("modelAttribute","optionalEqualityValue").then(myCallback);
+		myModel.when("modelAttribute", "optionalEqualityValue").then(myCallback);
 #### When truthy
 		var model = new Backbone.Model({
 			"foo": false		
