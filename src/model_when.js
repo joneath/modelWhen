@@ -9,7 +9,8 @@
         promise.resolve.call(this, this, actualValue);
       }
       this.on("change:" + attr, function(model, newValue) {
-        if ((_.isUndefined(value) && newValue) || newValue === value) {
+        if ((_.isUndefined(value) && newValue) ||
+            newValue === value) {
           promise.resolve.apply(this, arguments);
         }
       });
